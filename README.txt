@@ -33,12 +33,7 @@ code_generator.py counts the words and decides which word-count rule to apply:
 
 
 If the name is one word, code_generator.py calls get_syllables() from definitions.py, which hands the word to pyphen and gets back a hyphenated string like "al-ge-ri-a", then splits it into a list like ["al", "ge", "ri", "a"].
-code_generator.py counts the syllables and decides which syllable rule to apply:
-
-1 syllable → first 3 letters of the word
-2 syllables → first 2 letters of the word + first letter of syllable 2
-3 syllables → first letter of each syllable
-4+ syllables → first letter of the first 3 syllables
+code_generator.py counts the syllables and decides which syllable rule to apply,
 
 
 A raw 3-letter code is returned back up to main.py and stored in raw_codes — a simple dictionary of {country_name: code}.
