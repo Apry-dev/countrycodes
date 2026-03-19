@@ -44,3 +44,5 @@ but if it's already been claimed by another country, the duplicate gets its last
 main.py merges the new codes back into the original country data,
 so each country entry now has its dial code, ISO2, ISO3, and new code all in one place.
 main.py writes everything out to new_country_codes.json, and prints the full list of country names and their new codes to the console
+
+i got the original list of codes in a html element from a website and put it into the codes file. i then made parser.py in order to convert from html to a more easily readable format
